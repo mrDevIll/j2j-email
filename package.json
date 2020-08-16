@@ -1,0 +1,23 @@
+{
+  "name": "json-email",
+  "version": "1.0.0",
+  "description": "redirect json email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrDevIll/redirect-json-email.git"
+  },
+  "author": "mrdevill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrDevIll/redirect-json-email/issues"
+  },
+  "homepage": "https://github.com/mrDevIll/redirect-json-email#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
