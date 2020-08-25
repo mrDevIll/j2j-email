@@ -1,14 +1,14 @@
 # JSON to JSON email server
 ### Use JSON to manage your form inputs and send emails via server
 
-##Table of Content
+## Table of Content
 
 * [Introduction](#Introduction)
 * [Usage](#Usage)
 * [Security](#Security)
 * [Installation](#Installation)
 
-##Introduction
+## Introduction
 J2J-email is a Rest web API tha emulated phpmail function but accepts requests in JSON format and delivers the emails containing the user inputs through an nodejs/express server.
 
 ## Usage
