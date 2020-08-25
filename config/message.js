@@ -1,14 +1,26 @@
-//change the message as needed
+const Mail = require("nodemailer/lib/mailer");
 
-const message = req => { 
+
+
+const message = (data, res) => { 
+    const subjectEmail = process.env.EMAIL_SUBJECT || "email from server"; // subject email
+    const dataToText = data=> {let str = "message from the server: "; for (key in data){str +=` ${key}: ${data[key]} `}return str;
+    }
+    try{
+    dataToText(data);
     return {
     from: process.env.EMAIL_USER, // server email
     to: process.env.EMAIL_RECEIVER, //email which receives the message
-    replyTo: req.body.email,        //Online user
-    subject: `email sent from the server by ${req.body.email} `, // Subject line
-    text: req.body.message // Plain text body
-}
+    replyTo: data.email || "noreplyEmail@mail.com",        //Online user email if 
+    subject: subjectEmail,
+    text: dataToText 
+    }
+    }catch(e){
+        console.log(e);
+        res.status(250);
+        res.json({"message": "error with the email message"});
+        
+    }
 }; 
-
 
 module.exports = message;

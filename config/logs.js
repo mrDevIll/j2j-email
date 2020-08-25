@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var path = require('path');
 
 // create a write stream
-var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
+var accessLogStream = fs.createWriteStream(path.join('access.log'), { flags: 'a' });
 
 var logFile = function(app){
 
