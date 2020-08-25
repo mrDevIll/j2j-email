@@ -16,7 +16,7 @@ var routes = require("./routes/routes.js")(app);
 
 
 // open server
-var server = app.listen(3000, function () {
+var server = app.listen(3100, function () {
   
     console.log("Listening on port %s...", server.address().port);
 });

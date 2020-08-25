@@ -4,7 +4,8 @@ const message = require('./message.js');
 
 function mailing(req, res){
     if (validateRequest(req, res)){
-    const data = req.body.message;  
+    const data = req.body.message;
+   
     try{
     transport.sendMail(message(data, res), function(err, info){
         if(err){
