@@ -22,10 +22,12 @@ the request end point is localhost/email/ and the message needs to be send via P
 #### The message
 the post requests needs to have two properties a "message" field containing a JSON object with the form contents and a "required" field containing an Array with the required fields. Below a suitable example:
 
-**end point:**  localthost/email 
-**content type:** application/json 
 
 ## Example
+
+**end point:**  ``` localthost/email``` 
+**content type:** ``` application/json ``` 
+
 ```
 {
     "message":{
