@@ -5,6 +5,7 @@
 
 * [Introduction](#Introduction)
 * [Usage](#Usage)
+*[Example](#Example)
 * [Security](#Security)
 * [Installation](#Installation)
 
@@ -24,7 +25,7 @@ the post requests needs to have two properties a "message" field containing a JS
 **end point:**  localthost/email 
 **content type:** application/json 
 
-**body:**
+## Example
 ```
 {
     "message":{
