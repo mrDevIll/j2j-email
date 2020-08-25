@@ -25,7 +25,7 @@ the post requests needs to have two properties a "message" field containing a JS
 
 ## Example
 
-**end point:**  ``` localthost/email``` 
+**end point:**  ``` localhost/email``` 
 **content type:** ``` application/json ``` 
 
 ```
