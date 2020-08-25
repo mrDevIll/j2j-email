@@ -9,7 +9,7 @@
 * [Installation](#Installation)
 
 ## Introduction
-J2J-email is a Rest web API tha emulated phpmail function but accepts requests in JSON format and delivers the emails containing the user inputs through an nodejs/express server.
+J2J-email is a Rest web API that emulated phpmail function but accepts requests in JSON format and delivers the emails containing the user inputs through an nodejs/express server. 
 
 ## Usage
 
