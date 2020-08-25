@@ -5,7 +5,7 @@
 
 * [Introduction](#Introduction)
 * [Usage](#Usage)
-*[Example](#Example)
+* [Example](#Example)
 * [Security](#Security)
 * [Installation](#Installation)
 
