@@ -12,7 +12,6 @@ const message = (data, res) => {
         return str.toString();
     }
     
-   console.log(data.email)
     try{
     return {
     from: process.env.EMAIL_USER, // server email

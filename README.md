@@ -52,7 +52,7 @@ and the below email message to the configured email:
 message from the server:  name: Joe Black  email: user@email.com  text: I love your blog please contact me for collaboration  newsletter: true  privacy: accepted 
 ```
 ## Security
-The API will support CORS
+You can add a layer of security using [helmet](https://www.npmjs.com/package/helmet). To do so please set uncomment HELMET variable in the ```.env``` file 
 
 
 ## Installation
@@ -63,3 +63,12 @@ npm install
 node app.js
 ```
 to start the server
+
+## dependencies
+
+    * body-parser
+    * dotenv
+    * express
+    * helmet
+    * morgan
+    * nodemailer

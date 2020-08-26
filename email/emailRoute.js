@@ -1,6 +1,6 @@
 var express = require("express");
 const api = express.Router(); 
-const mailing = require('../config/emailMessage.js')
+const mailing = require('./emailMessage.js')
 
 
 api.post("/email", function(req, res){

@@ -1,34 +1,4 @@
-const transport = require('../utils/transport.js');
-const message = require('./message.js');
-
-
-function mailing(req, res){
-    if (validateRequest(req, res)){
-    const data = req.body.message;
-   
-    try{
-    transport.sendMail(message(data, res), function(err, info){
-        if(err){
-            console.log(err);
-            res.status(501);
-            res.json({"message": "there was an error sending the email"});
-            
-        }else {
-            console.log(info);
-            res.status(250);
-            res.json({"message": "email sent"});
-            
-        }
-    })
-    }
-    catch(e){
-        console.log(e);
-            res.status(501);
-            res.json({"message": "failure to send the email"});
-    }       
-}}
-
-function validateRequest(req, res){
+module.exports = function validateRequest(req, res){
     let valid = true;
     //check valid if request is valid
     if ( !req.body.required || req.body.required.length <1 || !Array.isArray(req.body.required)){
@@ -56,5 +26,3 @@ function validateRequest(req, res){
     }
     return valid;
         }
-    
-module.exports = mailing;
